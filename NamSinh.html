@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<h2>Nhập năm sinh của bạn:</h2>
+<input type="text" id="nhapvao">
+<button onclick="canChi()">Click Here</button>
+<h3 id="hienthi"></h3>
+<script>
+    function canChi() {
+        let a = document.getElementById('nhapvao').value
+        let can = a % 10
+        let chi = a % 12
+        let result
+        let result1
+        switch (can) {
+            case 0:
+                result = 'CANH'
+                break
+            case 1:
+                result = 'TAN'
+                break
+            case 2:
+                result='NHAM'
+                break
+            case 3:
+                result='QUY'
+                break
+            case 4:
+                result='GIAP'
+                break
+            case 5:
+                result='AT'
+                break
+            case 6:
+                result='BINH'
+                break
+            case 7:
+                result='DINH'
+                break
+            case 8:
+                result='MAU'
+                break
+            case 9:
+                result='KY'
+                break
+            default:
+                result='404 NOT FOUND'
+        }
+        switch (chi) {
+            case 0:
+                result1='THAN'
+                break
+            case 1:
+                result1='DAU'
+                break
+            case 2:
+                result1='TUAT'
+                break
+            case 3:
+                result1='HOI'
+                break
+            case 4:
+                result1='TY'
+                break
+            case 5:
+                result1='SUU'
+                break
+            case 6:
+                result1='DAN'
+                break
+            case 7:
+                result1='MAO'
+                break
+            case 8:
+                result1='THIN'
+                break
+            case 9:
+                result1='TY'
+                break
+            case 10:
+                result1='NGO'
+                break
+            case 11:
+                result1='MUI'
+                break
+            default:
+                result1='404 NOT FOUND'
+        }
+        document.getElementById('hienthi').innerHTML = result +' '+ result1
+    }
+</script>
+</body>
+</html>
